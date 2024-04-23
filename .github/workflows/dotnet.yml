@@ -5,8 +5,7 @@ name: CD CD FOR CONVERTER
 
 on:
   push:
-    branches: [ "dev" ]
-
+    branches: [ dev ]
 jobs:
   build:
     runs-on: ubuntu-latest
