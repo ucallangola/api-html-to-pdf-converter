@@ -29,6 +29,6 @@ jobs:
       uses: hmanzur/actions-set-secret@v2.0.0
       with:
         name: 'MINOR'
-        value: $((${{ secrets.MINOR }}+1))
-        repository: Xuxunguinho/api-html-to-pdf-converter
+        value: $((${{ secrets.MINOR }}))
+        repository: $GITHUB_REPOSITORY
         token: ${{ secrets.REPO_ACCESS_TOKEN }} 
