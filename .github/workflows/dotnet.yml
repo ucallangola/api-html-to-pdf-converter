@@ -25,7 +25,7 @@ jobs:
       run: docker push ${{ secrets.DOCKERHUB_IMAGE_NAME }}:${{ secrets.MAJOR }}.${{ secrets.MINOR }}   
     -
       name: Update Minor version
-      uses: hmanzur/actions-set-confidence@v2.0.0
+      uses: actions/checkout@v3
       with:
         name: 'MINOR'
         value: $((${{ secrets.MINOR }}+1))
